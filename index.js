@@ -102,26 +102,30 @@ const questions = () => {
                 }
             }
         },
-        type, 'input',
-        name, 'profile',
-        message, 'Enter your GitHub Profile Link',
-        validate, profileInput => {
-            if (profileInput) {
-                return true;
-            } else {
-                console.log('You must enter your GitHub Profile Link');
-                return false;
-            }
+        {
+            type: 'input',
+            name: 'profile',
+            message: 'Enter your GitHub Profile Link',
+            validate: profileInput => {
+                if (profileInput) {
+                    return true;
+                } else {
+                    console.log('You must enter your GitHub Profile Link');
+                    return false;
+                }
+            },
         },
-        type, 'input',
-        name, 'email',
-        message, 'What is your email address?',
-        validate, emailInput => {
-            if (emailInput) {
-                return true;
-            } else {
-                console.log('You must enter your email address');
-                return false;
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email address?',
+            validate: emailInput => {
+                if (emailInput) {
+                    return true;
+                } else {
+                    console.log('You must enter your email address');
+                    return false;
+                }
             }
         }
     ])
@@ -130,14 +134,23 @@ const questions = () => {
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, err => {
-        if(err) throw err;
+        if (err) throw err;
         console.log('README has been created');
     })
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    promptQuestions()
+    questions()
+        .then(input => {
+            return generateMarkdown(input);
+        })
+        .then(markdown => {
+            writeToFile('./dist/README.md', markdown);
+        })
+        .catch(err => {
+            console.log(err);
+        })
 }
 
 // Function call to initialize app
