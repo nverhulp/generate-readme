@@ -125,23 +125,13 @@ const questions = () => {
             }
         }
     ])
-
-        .then(data => {
-            return generateMarkdown(data);
-        })
-        .then(pageMarkdown => {
-            return writeToFile(pageMarkdown);
-        })
-        .catch(err => {
-            console.log(err);
-        })
 }
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, err => {
-        if (err) throw err;
-        console.log('README has been created')
+        if(err) throw err;
+        console.log('README has been created');
     })
 }
 
