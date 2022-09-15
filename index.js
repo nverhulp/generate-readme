@@ -102,10 +102,10 @@ const questions = () => {
             }
         }
     },
-    type: 'input',
-    name: 'profile',
-    message: 'Enter your GitHub Profile Link',
-    validate: profileInput => {
+    type, 'input',
+    name, 'profile',
+    message, 'Enter your GitHub Profile Link',
+    validate, profileInput => {
         if(profileInput) {
             return true;
         } else {
@@ -113,10 +113,10 @@ const questions = () => {
             return false;
         }
     },
-    type: 'input',
-    name: 'email', 
-    message: 'What is your email address?',
-    validate: emailInput => {
+    type, 'input',
+    name, 'email', 
+    message, 'What is your email address?',
+    validate, emailInput => {
         if(emailInput) {
             return true;
         } else {
