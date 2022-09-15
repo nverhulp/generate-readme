@@ -59,7 +59,70 @@ const questions = () => {
         }
     },
     {
-        
+       type: 'list',
+       name: 'license',
+       choices: ['MIT', 'ISC', 'GNU LGPL', 'Apache', 'BSD', 'Unlicense', 'None'] 
+    },
+    {
+        type: 'input',
+        name: 'contribution',
+        message: 'Enter your contribution guidelines for this project',
+        validate: contributionInput => {
+            if(contributionInput) {
+                return true;
+            } else {
+                console.log('You must enter your contribution guidelines');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'testing',
+        message: 'Input testing instructions for the user',
+        validate: testingInput => {
+            if(testingInput) {
+                return true;
+            } else {
+                console.log('You must enter testing instructions');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'username',
+        message: 'What is your GitHub username?',
+        validate: usernameInput => {
+            if(usernameInput) {
+                return true;
+            } else {
+                console.log('You must enter your GitHub username');
+                return false;
+            }
+        }
+    },
+    type: 'input',
+    name: 'profile',
+    message: 'Enter your GitHub Profile Link',
+    validate: profileInput => {
+        if(profileInput) {
+            return true;
+        } else {
+            console.log('You must enter your GitHub Profile Link');
+            return false;
+        }
+    },
+    type: 'input',
+    name: 'email', 
+    message: 'What is your email address?',
+    validate: emailInput => {
+        if(emailInput) {
+            return true;
+        } else {
+            console.log('You must enter your email address');
+            return false;
+        }
     }
 ])
 }
