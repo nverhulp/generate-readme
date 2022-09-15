@@ -33,7 +33,33 @@ const questions = () => {
         }
     }, 
     {
-
+        type: 'input',
+        name: 'install',
+        message: 'Enter installation instructions',
+        validate: installInput => {
+            if(installInput) {
+                return true;
+            } else {
+                console.log('You must enter installation instructions');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'What is the usage information for your project?',
+        validate: usageInput => {
+            if(usageInput) {
+                return true;
+            } else {
+                console.log('You must enter your usage information');
+                return false;
+            }
+        }
+    },
+    {
+        
     }
 ])
 }
