@@ -13,6 +13,8 @@ Your task is to create a command-line application that dynamically generates a p
 
 ## Video Tutorial
 
+https://user-images.githubusercontent.com/105401594/190544884-6a3ff273-113f-4d47-b763-fb0654972005.mp4
+
 ## Acceptance Criteria
 
 GIVEN a command-line application that accepts user input
