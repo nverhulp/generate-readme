@@ -59,7 +59,6 @@ function renderLicenseSection(data) {
 if (data.license !== 'none') {
   return `
 ## License
-
 ${renderLicenseLink(data)}
   `
 } else {
