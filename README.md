@@ -6,13 +6,12 @@ Your task is to create a command-line application that dynamically generates a p
 
 ## Table of Contents
 
-1. [Deployed Page](#deployed-page)
+1. [Video Tutorial](#video-tutorial)
 2. [Acceptance Criteria](#acceptance-criteria)
 3. [Comments](#comments)
-4. [URL of Deployed Application](#url-of-deployed-application)
-5. [Credits](#credits)
+4. [Credits](#credits)
 
-## Deployed Page
+## Video Tutorial
 
 ## Acceptance Criteria
 
@@ -34,7 +33,11 @@ THEN I am taken to the corresponding section of the README
 
 ## Comments
 
-## URL of Deployed Application
+1. Provided questions for user to answer in order to create README file.
+2. Required an answer and question would repeat if left blank.
+3. Working table of contents.
+4. License image displayed at top.
+5. Section with contact information.
 
 ## Credits
 
