@@ -280,7 +280,7 @@ return `
 # ${data.title}  ${renderLicenseBadge(data.license)}
 
 ## Description
-${data.description}
+${data.about}
 
 ## Table of Contents
 1. [Installation](#Installation)
@@ -301,7 +301,7 @@ ${renderLicenseSection(data)}
 ${data.contribution}
 
 ## Tests
-${data.test}
+${data.testing}
 
 ## Questions
 If you have any questions about the project you can reach out to me via email or GitHub with the information below. 
