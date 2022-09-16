@@ -61,7 +61,7 @@ const questions = () => {
         {
             type: 'list',
             name: 'license',
-            choices: ['MIT', 'ISC', 'GNU LGPL', 'Unlicense', 'None']
+            choices: ['MIT', 'ISC', 'Unlicense', 'None']
         },
         {
             type: 'input',
