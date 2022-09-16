@@ -42,3 +42,6 @@ THEN I am taken to the corresponding section of the README
 ## Credits
 
 1. Starter code from [GitHub](https://github.com/coding-boot-camp/potential-enigma)
+2. License for [MIT](https://opensource.org/licenses/MIT)
+3. License for [ISC](https://opensource.org/licenses/ISC)
+4. License for [Unlicense](https://unlicense.org/)
